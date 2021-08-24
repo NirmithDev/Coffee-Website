@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style2.css">
+    <link rel="stylesheet" href="./style/style3.css">
+    <link rel="stylesheet" href="./style/style4.css">
+    <link rel="stylesheet" href="./style/style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!--Responsive menubar-->
+    <nav style="position: fixed;">
+        <div class="logo">
+            Café Grande
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul id="abCont">
+           <li><a class="ab" href="#topSection">Domicile</a></li>
+           <li><a class="ab" href="#AboutUs">Environ</a></li>
+           <li><a class="ab" href="#service">Services</a></li>
+           <li><a class="ab" href="#menuItems">Galerie</a></li>
+           <li><a class="ab" href="#menuItems">Témoignages</a></li>
+           <li><a class="ab" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!--Main Page-->
+    <div class="topSection" id="topSection">
+        <!--Add the Company name and button for the about us section-->
+        <div class="name">
+            <div style="padding-top: 50vh;">
+                <h1 class="CafeName">Bahreïn Café Grande</h1>
+                <p style="font-size: 15px;letter-spacing: 3.5px;text-transform: uppercase;">fresh, unique and traditional</p>
+                <a href="#AboutUs" style="text-decoration: none;color: black;font-size: 20px;">
+                    <div class="abooot" style="display: flex;justify-content: center; padding: 15px;">
+                        <p class="aboot">
+                            Qui Sommes-Nous
+                        </p>
+                    </div>                    
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--About Us-->
+    <div style="background-image: -webkit-linear-gradient(rgba(239, 53, 53 , 80%),rgba(0, 0, 0, 0.7)),url('./images/AboutUSBG.png');color: white;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;background-position: center;">
+        <div class="AboutUs" id="AboutUs">
+            <!--Two Containers-->
+            <!--Responsive effects-->
+            <!--Image on the left and story on the right-->
+            <h1 class="aboutHeader">Qui Sommes-Nous</h1>
+            <span class="section-separator"></span>
+            <div id="CONT">
+                <div id="aboutInfo">
+                    <p>
+                        Au Bahrain Grand Cafe, nous sommes fiers de servir nos clients avec le meilleur 
+                        café et les meilleurs rafraîchissements pour commencer 
+                        leur journée sous tension et plein d’espoir.  Fiers gagnants du magazine en 2020 et a 
+                        commencé en 2019, nous sommes donc extrêmement reconnaissants de votre soutien et de vos votes.  
+                        Descendez et visitez-nous et nous nous assurerons que vous avez le meilleur café que le pays a à 
+                        offrir à un prix raisonnable.  S’il s’agit d’une première minuterie, c’est sur la maison.
+                    </p>
+                </div>
+                <!--Image-->
+                <div class="imgCont" style="margin: auto;">
+                    <img src="./images/About-us.png" width="230" height="230" style="border-radius: 50%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Featured Products and Services-->
+    <div id="service" style="background-image: -webkit-linear-gradient(rgba(239, 53, 53 , 80%),rgba(0, 0, 0, 0.7)),url('./images/Services-bg.png');color: white;background-repeat: no-repeat;background-attachment: fixed;color: white;background-size: cover;">
+        <div style="padding: 60px 11px;">
+            <h1 style="text-align: center;padding: 15px;">SERVICES</h1>
+            <span class="section-separator"></span>
+            <!--Main Services-->
+            <div class="carousel">
+                <div class="carousel__item carousel__item--visible">
+                    <div  class="i" style="background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),rgb(239, 53, 53 , 40%)),url('./images/home-delivery.png');background-position: center;text-align: center;background-repeat: no-repeat;background-size: cover;    margin-top: 40px;">
+                        <!--Heading so like what service this is-->
+                        <h1 id="con">LIVRAISON GRATUITE À DOMICILE</h1>
+                        <!--Explaination-->
+                        <div id="bu" style="align-items: center;">
+                            <div class="abooot">
+                                <a href="#" style="text-decoration: none;color: black;font-size: 20px;">
+                                    <p class="aboot">
+                                        Contactez-nous
+                                    </p>
+                                </a>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="carousel__item">
+                    <div  class="i" style="background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),rgb(239, 53, 53 , 40%)),url('./images/meetings.png');background-position: center;text-align: center;background-repeat: no-repeat;background-size: cover;    margin-top: 40px;">
+                        <!--Heading so like what service this is-->
+                        <h1 id="con">PARTIES ET CONFÉRENCE</h1>
+                        <!--Explaination-->
+                        <div id="bu" style="align-items: center;">
+                            <div class="abooot">
+                                <a href="#" style="text-decoration: none;color: black;font-size: 20px;">
+                                    <p class="aboot">
+                                        Contactez-nous
+                                    </p>
+                                </a>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="carousel__item">
+                    <div  class="i" style="background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),rgb(239, 53, 53 , 40%)),url('./images/Discounts.png');background-position: center;text-align: center;background-repeat: no-repeat;background-size: cover;    margin-top: 40px;">
+                        <!--Heading so like what service this is-->
+                        <h1 id="con2">PREFERENTIELS</h1>
+                        <!--Explaination-->
+                        <a href="#" style="text-decoration: none;color: black;font-size: 20px;">
+                            <div id="bu" style="align-items: center;">
+                                <div class="abooot">
+                                    <p class="aboot">
+                                        Contactez-nous
+                                    </p>
+                                </div>
+                            </div>                    
+                        </a>
+                    </div>
+                </div>  
+                <div class="carousel__actions">
+                  <button id="carousel__button--prev" aria-label="Previous slide"><</button>
+                  <button id="carousel__button--next" aria-label="Next slide">></button>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!--Menu and Items-->
+    <!--Add a Input make it like one of the search thingies you built-->
+    <div class="menuItems" id="menuItems" style="color:white;background-image: -webkit-linear-gradient(rgba(239, 53, 53 , 80%),rgba(0, 0, 0, 0.7)),url('./images/MenuBg.png');color: white;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;background-position: center; height: 700px;text-align: center;padding: 26px;">
+        <!--Header-->
+        <h1 style="text-transform: uppercase; color: white;margin-top: 50px;">Éléments de menu</h1>
+        <span class="section-separator"></span>
+        <!--Input Box and search button-->
+        <!--Or Maybe Instead we have 2 links that filter out the items?-->
+        <div style="padding: 20px;height: 83px;display: flex;justify-content: center;">
+            <ul style="display: flex;flex-wrap: wrap;list-style: none;">
+                <li id="dessert" style="margin: 0 5px;"><a style="cursor:pointer; color: #f2f2f2;text-decoration: none;font-size: 18px;font-weight: 500;padding: 8px 15px;border-radius: 5px;letter-spacing: 1px;transition: all 0.3s ease;">Dessert</a></li>
+                <li id="coffee" style="margin: 0 5px;"><a style="cursor:pointer; color: #f2f2f2;text-decoration: none;font-size: 18px;font-weight: 500;padding: 8px 15px;border-radius: 5px;letter-spacing: 1px;transition: all 0.3s ease;">Coffee</a></li>
+            </ul>
+        </div>
+        <div id="out">
+            <!--<div id="outContainer">
+                <h1 style="padding: 10px;">Rangeena</h1>
+                <img src="https://i1.wp.com/cookiecompanion.com/blog/wp-content/uploads/2017/04/qatar-rangeena-koekje-dadels-en-walnoten-verdelen-DSC_1147-copy.jpg" width="130" height="130" style="border-radius: 10px;">
+                <p style="padding: 10px;font-size: 20px;">Cost: 5$</p>
+            </div>--> 
+        </div>
+    </div>
+    
+    <!--Testimonials-->
+    <div id="Testimonials" style="background-image: -webkit-linear-gradient(rgba(239, 53, 53 , 80%),rgba(0, 0, 0, 0.7)),url('./images/TestimonialBackground.png');color: white;background-repeat: no-repeat;background-attachment: fixed;color: white;background-size: cover;height: 650px;">
+        <div class="container2" >
+            <div class="section-title">
+                <h2>Testimonials</h2>
+                <span class="section-separator"></span>
+                <p>Ce qu’ils disent</p>
+            </div>
+        </div>
+        <div class="testimonials-carousel-wrap">
+            <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
+            <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div>
+            <div class="testimonials-carousel">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star" style="color: #030303;"></i>
+                                    </div>
+                                    <p>Les serveurs étaient sympathiques et ils ont tenu leur promesse que les 4 étoiles sont à cause du moins grand nombre de café arabe gratuit. 😁</p>
+                                    <div class="testimonials-avatar">
+                                        <h3>John Doe</h3>
+                                        <h4>visité le 23<sup>rd</sup> Août 2021</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                            </div>
+                        </div>
+    
+                        <!--second--->
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>J’ai vraiment apprécié leur service et les rabais qu’ils ont offerts pour moi et mes collègues et ainsi que mon entreprise.  10/10 nous reverra.</p>
+                                    <div class="testimonials-avatar">
+                                        <h3>Doe Victor</h3>
+                                        <h4>Sr. Software Dev at Microsoft</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                            </div>
+                        </div>
+                        <!--third-->
+    
+                        <div class="swiper-slide">
+                            <div class="testi-item">
+                                <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                <div class="testimonials-text">
+                                    <div class="listing-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <p>J’aime tout dans cet endroit, le service est juste sur le point et est le meilleur que j’ai connu dans ma vie.</p>
+                                    <div class="testimonials-avatar">
+                                        <h3>Noel Richard</h3>
+                                        <h4>Tourist</h4>
+                                    </div>
+                                </div>
+                                <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tc-pagination"></div>
+        </div>
+    </div>
+
+    <!--Contact Us and all the shizzle-->
+    <div>
+        
+    </div>
+
+    <!--Footer-->
+</body>
+<script src="./data/data.js"></script>
+<script src="./script/script.js"></script>
+<script src="./script/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+<script src="./script/scripts.js"></script>
+<!--<script src="./script/carousel.js"></script>-->
+</html>

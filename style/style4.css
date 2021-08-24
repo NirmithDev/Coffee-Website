@@ -1,0 +1,99 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    /*height: 750px;*/
+}
+  
+.carousel .carousel__item,
+  .carousel .carousel__item--hidden {
+    display: none;
+}
+  
+.carousel .carousel__item img {
+    width: 100%;
+    /*max-width: 600px;*/
+    height: auto;
+    /*height: 100%;*/
+}
+
+.carousel .carousel__item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+    display: flex;
+    justify-content: center;
+}
+  
+.carousel .carousel__actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    font-size: 35px;
+    color: white;
+    transition: 1s;
+}
+
+.carousel .carousel__actions button:hover {
+    background-color: white;
+    color: black;
+}
+  
+.carousel .carousel__actions button #carousel__button--prev {
+    margin-left: 20px;
+}
+  
+.carousel .carousel__actions button #carousel__button--next {
+    margin-right: 20px;
+}
+  
+@media screen and (max-width:768px){
+    .carousel {
+      height: 300px;
+    }  
+    .carousel .carousel__item img {
+      width: 100%;
+      height: 100%;
+    }
+    .carousel .carousel__actions button {
+      width: 50px;
+      height: 63px;
+      font-size: 30px;
+    }  
+    .carousel .carousel__actions button:hover {
+        background-color: transparent;
+        color: white;
+    }
+}
+  
+@keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+  

@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.topSection{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),rgb(239, 53, 53 , 40%)),url("../images/backgroung.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.CafeName{
+    margin: auto;
+    font-size: 72px;
+}
+
+.aboot{
+    width: 216px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px 0;
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+.aboot:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.AboutUs{
+    text-align: center;
+    padding: 95px;
+}
+
+#aboutInfo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-size: 22px;
+}
+
+#CONT{
+    display: flex;
+    padding: 37px;
+}
+
+.aboutHeader{
+    font-size: 49px;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    z-index:9;
+  }
+  nav .logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #111;
+    background: #fff;
+  }
+  nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  @media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+    #CONT{
+        flex-wrap: wrap-reverse;
+    }
+  }
+  @media (max-width: 920px) {
+    nav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #111;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+      left: 0;
+    }
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: cyan;
+    }
+  }
+
+.search{
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    border:1px solid whitesmoke;
+    box-shadow: white 0px 2px 8px;
+}
+
+.submit{
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: 2s;
+    outline: none;
+    box-shadow: white 0px 2px 8px;
+    height: 50px;
+}
+
+.submit:hover{
+    background-color: orangered;
+    color: white;
+}
+
+
+#out{
+    height: 450px;
+    background-color: #ffffff38;
+    border-radius: 10px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#outContainer{
+    background-color: #00000085;;
+    height: 290px;
+    width: 290px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 1s;
+}
+
+#outContainer:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and ( max-width:768px){
+    .CafeName{
+        font-size: 30px;
+    }
+    .aboutHeader{
+        font-size: 30px;
+    }
+    #aboutInfo{
+        font-size: 20px;
+    }
+    .imgCont{
+        padding-top: 20px;
+    }
+    .AboutUs{
+      padding: 24px;
+    }
+}
+
+@media screen and (min-width:1px) {
+  ::-webkit-scrollbar, .follows_dets::-webkit-scrollbar, .followings_dets::-webkit-scrollbar {
+    width: 20px; 
+  }
+
+  ::-webkit-scrollbar-track,.follows_dets::-webkit-scrollbar-track,  .followings_dets::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 25px;
+  }
+
+  ::-webkit-scrollbar-thumb,.follows_dets::-webkit-scrollbar-thumb, .followings_dets::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+}
