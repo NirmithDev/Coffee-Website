@@ -10,7 +10,6 @@
 	float: left;
 	position: relative;
 	width: 100%;
-	padding-top: 40px; 
     text-align: center;
     color: white;
 }
@@ -60,7 +59,7 @@
     /* margin-top: -25px; */
     z-index: 1;
     cursor: pointer;
-    background: #007aff;
+    background: #000000a3;
     box-shadow: 0 9px 26px rgb(58 87 135 / 45%);
     transition: all 200ms linear;
     outline: none;
@@ -93,20 +92,25 @@
     width: 500px;
 }
 .testimonials-text {
+    min-height: 326px;
+    max-height: 327px;
 	padding: 75px 50px 75px;
 	overflow:hidden;
-	background: #f5f6fa;
+	background: #ffffff3f;
 	border:1ps solid #f1f1f1;
 	border-radius: 10px;
 	transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .testimonials-text-after{
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: inherit;
 	position: absolute;
-	color:#c61414;
-	opacity: .3;
+	color:#ffffff;
 	font-size: 35px;
 	transition: all 400ms linear;
 	bottom: 25px;
@@ -117,8 +121,7 @@
 	font-weight: normal;
 	text-decoration: inherit;
 	position: absolute;
-	color: #c61414;
-	opacity: .3;
+	color: #ffffff;
 	font-size: 35px;
 	transition: all 400ms linear;
 	top: 25px;
@@ -134,7 +137,7 @@
 }
 .testimonials-avatar h3{
 	font-weight: 600;
-	color: #7d93b2;
+	color: #ffffff;
 	font-size: 18px;
 }
 .testimonials-avatar h4{
@@ -170,12 +173,16 @@
 	box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
 }
 .swiper-slide-active .testimonials-text {
-	background: #fff;
+	background: #ffffff26;
     height: 364px;
 	box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .testimonials-text p{
-	color: #878c9f;
+	color: #ffffff;
 	font-size: 14px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
@@ -236,4 +243,12 @@
     .listing-carousel-button.listing-carousel-button-next{
         padding-left: 10px;
     }
+    .section-title h2 {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:1px) {
+    .listing-carousel-button.listing-carousel-button-prev , .listing-carousel-button.listing-carousel-button-next{
+        margin-top: 100px;
+    } 
 }

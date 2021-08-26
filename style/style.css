@@ -59,11 +59,6 @@
     display: flex;
     padding: 37px;
 }
-
-.aboutHeader{
-    font-size: 49px;
-}
-
 nav{
     display: flex;
     height: 80px;
@@ -118,6 +113,7 @@ nav{
     }
     #CONT{
         flex-wrap: wrap-reverse;
+        padding: 1px;
     }
   }
   @media (max-width: 920px) {
@@ -223,6 +219,8 @@ nav{
     }
     #aboutInfo{
         font-size: 20px;
+        padding: 0px;
+        padding-top: 10px;
     }
     .imgCont{
         padding-top: 20px;

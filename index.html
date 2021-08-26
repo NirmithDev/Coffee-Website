@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/style3.css">
     <link rel="stylesheet" href="./style/style4.css">
     <link rel="stylesheet" href="./style/style5.css">
+    <link rel="stylesheet" href="./style/style6.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
@@ -28,8 +29,8 @@
            <li><a class="ab" href="#AboutUs">Environ</a></li>
            <li><a class="ab" href="#service">Services</a></li>
            <li><a class="ab" href="#menuItems">Galerie</a></li>
-           <li><a class="ab" href="#menuItems">Témoignages</a></li>
-           <li><a class="ab" href="#">Contact</a></li>
+           <li><a class="ab" href="#Testimonials">Témoignages</a></li>
+           <li><a class="ab" href="#Contact">Contact</a></li>
         </ul>
     </nav>
     <!--Main Page-->
@@ -37,7 +38,7 @@
         <!--Add the Company name and button for the about us section-->
         <div class="name">
             <div style="padding-top: 50vh;">
-                <h1 class="CafeName">Bahreïn Café Grande</h1>
+                <h1 class="CafeName" style="text-transform: uppercase;">Bahreïn Café Grande</h1>
                 <p style="font-size: 15px;letter-spacing: 3.5px;text-transform: uppercase;">fresh, unique and traditional</p>
                 <a href="#AboutUs" style="text-decoration: none;color: black;font-size: 20px;">
                     <div class="abooot" style="display: flex;justify-content: center; padding: 15px;">
@@ -56,7 +57,7 @@
             <!--Two Containers-->
             <!--Responsive effects-->
             <!--Image on the left and story on the right-->
-            <h1 class="aboutHeader">Qui Sommes-Nous</h1>
+            <h1 class="aboutHeader" style="margin-top: 50px;text-transform: uppercase;">Qui Sommes-Nous</h1>
             <span class="section-separator"></span>
             <div id="CONT">
                 <div id="aboutInfo">
@@ -80,7 +81,7 @@
     <!--Featured Products and Services-->
     <div id="service" style="background-image: -webkit-linear-gradient(rgba(239, 53, 53 , 80%),rgba(0, 0, 0, 0.7)),url('./images/Services-bg.png');color: white;background-repeat: no-repeat;background-attachment: fixed;color: white;background-size: cover;">
         <div style="padding: 60px 11px;">
-            <h1 style="text-align: center;padding: 15px;">SERVICES</h1>
+            <h1 style="text-align: center;padding: 15px;text-transform: uppercase;">SERVICES</h1>
             <span class="section-separator"></span>
             <!--Main Services-->
             <div class="carousel">
@@ -165,9 +166,9 @@
     
     <!--Testimonials-->
     <div id="Testimonials" style="background-image: -webkit-linear-gradient(rgba(239, 53, 53 , 80%),rgba(0, 0, 0, 0.7)),url('./images/TestimonialBackground.png');color: white;background-repeat: no-repeat;background-attachment: fixed;color: white;background-size: cover;height: 650px;">
-        <div class="container2" >
+        <div class="container2" style="padding: 26px;">
             <div class="section-title">
-                <h2>Testimonials</h2>
+                <h1 style="margin-top: 50px;text-transform: uppercase;">Testimonials</h1>
                 <span class="section-separator"></span>
                 <p>Ce qu’ils disent</p>
             </div>
@@ -251,8 +252,40 @@
     </div>
 
     <!--Contact Us and all the shizzle-->
-    <div>
-        
+    <div id="Contact" style="background-image: -webkit-linear-gradient(rgba(239, 53, 53 , 80%),rgba(0, 0, 0, 0.7)),url('./images/bg.jpg');color: white;background-repeat: no-repeat;background-attachment: fixed;color: white;background-size: cover;height: 650px; background-position: center;">
+        <div class="container2" style="padding: 26px;">
+            <div class="section-title">
+                <h1 style="margin-top: 50px;text-transform: uppercase;">Contactez-nous</h1>
+                <span class="section-separator"></span>
+            </div>
+        </div>
+        <!--Div Container for the personal phone calls-->
+        <!--details-->
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker-alt" style="color: black;"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Manama Road 2015,<br>Manama,Bahrain,<br>20112</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone-volume" style="color: black;"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>12345678</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-mail-bulk" style="color: black;"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>abc@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Footer-->
