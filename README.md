@@ -13,10 +13,10 @@
 - Add a Carousel for Features like Featured Products ✅
 - also Dummy Testimonials ✅
 - Add some Menu option (with Filter) that shows the variety of items we got along with their prices ✅
+- Add a Contact Us Section that actually looks neat ✅
+- Maybe add some animation to the menu bar? ✅
 
 ## Functionalities To Be Implemented
-- Add a Contact Us Section that actually looks neat ❌
-- Maybe add some animation to the menu bar? ❌
 
 ## Issues
 - Solo Work Need Companion
