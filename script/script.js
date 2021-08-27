@@ -4,8 +4,9 @@ let d = datas
 
 //dessert items
 let b= document.getElementById("dessert")
+let c4= document.getElementById("coffee")
 b.addEventListener("click",()=>{
-    console.log("I WAS CLICKED")
+    //console.log("I WAS CLICKED")
     //fetch of all data    
     //console.log(d)
     let o1 = document.getElementById("out")
@@ -23,12 +24,13 @@ b.addEventListener("click",()=>{
        }
     }
     o1.innerHTML = outTot
+    b.style["color"]="black";
+    c4.style["color"]="white";
 })
 
 //coffee items
-let c4= document.getElementById("coffee")
 c4.addEventListener("click",()=>{
-    console.log("I WAS CLICKED")
+    //console.log("I WAS CLICKED")
     //fetch of all data    
     //console.log(d)
     let o1 = document.getElementById("out")
@@ -46,6 +48,8 @@ c4.addEventListener("click",()=>{
        }
     }
     o1.innerHTML = outTot
+    c4.style["color"]="black";
+    b.style["color"]="white";
 })
 
 //on loading the entire document it loads up all the menu items
